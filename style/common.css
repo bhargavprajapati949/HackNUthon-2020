@@ -1,0 +1,100 @@
+body{
+    overflow-x: hidden;
+}
+
+/* ======================== navigation bar ======================== */
+
+#navigationbar{
+    height:15vmin;
+    min-height: 80px;
+    background-color: transparent;
+}
+
+#main-logo, #main-logo-container{
+   height: 100%;
+}
+
+.nav-after-scroll{
+    background-color: #1e272e !important;
+}
+
+.nav-item.active{
+    border-bottom: .2rem solid yellow;
+}
+
+.nav-link{
+    text-transform: uppercase;
+}
+
+#navbarContent .nava{
+    color: tomato;
+    font-size: larger;
+    font-family: 'Roboto Slab', serif;
+    transition: ease-in-out 1s;
+}
+
+.navbtn{
+    margin: auto .4em;
+    color: #e15f41 !important;
+}
+
+.navbtn:hover{
+    color: #fff !important;
+}
+
+/* Underline under nav-item when hover*/
+
+#navbarContent .nava:before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    bottom: 0;
+    left: 5%;
+    background: yellow;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+}
+
+#navbarContent .nava:hover:before,
+#navbarContent .nava:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.nav-item{
+    position: relative;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {display: block;}
+
+/* .dropdown-menu{
+    transition: all 5s linear;
+} */
+
+
+/* ======================== footer =============================== */
+
+
+#footer{
+    background-color: #1e272e;
+    color: #bdc3c7;
+    /* padding: 2% 2% 0%; */
+}
+
+#footer #footer-logo{
+    /* padding: 2% 4%; */
+}
+
+#footer a{
+    text-decoration: none;
+    color: inherit ;
+}
+
+#footer .seperator{
+    height: 1px;
+    background-color: #bdc3c7 !important;
+}

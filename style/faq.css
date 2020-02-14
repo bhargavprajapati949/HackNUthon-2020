@@ -1,0 +1,60 @@
+/*=======================
+    Intro
+.    =====================*/
+
+.intro-img{
+    width: 100%;
+    overflow-y: hidden;
+    height: 400px;
+}
+
+.intro-img h1{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 25vh;
+    color: black;
+    font-size: 4em;
+}
+
+/*==============================
+        Question Answers
+.   ================================*/
+
+.qa-box{
+    padding: 8px;
+    /* background-color: black; */
+    text-align: justify;
+}
+
+.que-box{
+    font-weight: 650;
+}
+
+.qa-box svg{
+    float: right;
+    font-size: 1.3em;
+}
+
+.ans-box{
+    /* background-color: #ecf0f1; */
+    padding: 5px 10px;
+}
+
+.qa-box:nth-child(even){
+    /* background-color: ; */
+}
+
+.qa-box:nth-child(odd){
+    background-color: #bdc3c7;
+}
+
+.qa-box:first-child{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.qa-box:last-child{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}

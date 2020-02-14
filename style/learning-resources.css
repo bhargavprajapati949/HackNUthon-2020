@@ -1,0 +1,33 @@
+body{
+    /* padding-top: 15vh; */
+    overflow-x: hidden;
+}
+
+/*=======================
+    Intro
+    =====================*/
+
+.intro-img{
+    width: 100%;
+    overflow-y: hidden;
+    height: 400px;
+}
+
+.intro-img h1{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 25vh;
+    color: black;
+    font-size: 4em;
+}
+
+
+/*========================
+    Footer
+    =====================*/
+/* 
+#footer{
+    bottom: 0px;
+    position: absolute;
+} */
