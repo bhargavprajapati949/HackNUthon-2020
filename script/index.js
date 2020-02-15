@@ -1,3 +1,9 @@
+//preloader
+
+$('document').ready(function(){
+  $('#preloader').fadeOut(1000);
+})
+
 //change style of navbar after hero section is scrolled
 
 const slider = document.querySelector('#slider');
