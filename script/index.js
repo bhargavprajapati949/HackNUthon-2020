@@ -43,7 +43,7 @@ const fadeInRightItems = document.querySelectorAll(".animated.addfadeInRight");
 
 const fadeInRightObserver = new IntersectionObserver(function(entries, fadeInRightObserver){
   entries.forEach(entry => {
-    console.log(entry);
+    // console.log(entry);
     if(entry.isIntersecting == false){
       return;
     }
@@ -65,7 +65,7 @@ const fadeInLeftItems = document.querySelectorAll(".animated.addfadeInLeft");
 
 const fadeInLeftObserver = new IntersectionObserver(function(entries, fadeInLeftObserver){
   entries.forEach(entry => {
-    console.log(entry);
+    // console.log(entry);
     if(entry.isIntersecting == false){
       return;
     }
@@ -87,7 +87,7 @@ const fadeInItems = document.querySelectorAll(".animated.addfadeIn");
 
 const fadeInObserver = new IntersectionObserver(function(entries, fadeInObserver){
   entries.forEach(entry => {
-    console.log(entry);
+    // console.log(entry);
     if(entry.isIntersecting == false){
       return;
     }
@@ -109,7 +109,7 @@ const zoomInItems = document.querySelectorAll(".animated.addzoomIn");
 
 const zoomInObserver = new IntersectionObserver(function(entries, zoomInObserver){
   entries.forEach(entry => {
-    console.log(entry.target);
+    // console.log(entry.target);
     if(entry.isIntersecting == false){
       return;
     }
