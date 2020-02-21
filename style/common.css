@@ -18,7 +18,7 @@ body{
     background-color: #1e272e !important;
 }
 
-.nav-item.active{
+.nav-item.active .nava{
     border-bottom: .2rem solid yellow;
 }
 
