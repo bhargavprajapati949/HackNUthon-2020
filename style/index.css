@@ -272,7 +272,7 @@ body{
 }
 
 #gallery .overlay-logo{
-    transform: translateY(20%);
+    /* transform: translateY(10%); */
 }
 
 
