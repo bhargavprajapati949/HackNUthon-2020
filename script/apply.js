@@ -63,7 +63,7 @@ $('#submit-form').on('click', function(e) {
   console.log(formdata);
   var jqxhr = $.ajax({
     url: url,
-    method: "GET",
+    method: "POST",
     dataType: "json",
     data: formdata,
     success: function(response){
