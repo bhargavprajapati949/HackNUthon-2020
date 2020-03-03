@@ -7,12 +7,6 @@
     background-color: brown;
 }
 
-body{
-    /* font-family: 'Roboto Slab', serif; */
-    /* background: url("/images/background.gif"); */
-    /* background-size: cover; */
-}
-
 /*=========================
     Responsive Bootstrap break point
 .   ====================================*/
@@ -30,140 +24,6 @@ body{
 @media (min-width: 1200px) {}
 
 
-/*===============
-    Preloader
-.   ==================*/
-
-#preloader {
-    position: fixed;
-    z-index: 9999;
-    background-color: #fff;
-
-    height: 100%;
-    width: 100%;    
-}
-
-/* #preloader .contant{
-    transform: translateY(20vh);
-} */
-
-#preloader .preloader-logo{
-    width: 50vw;
-    height: auto;
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}
-
-
-/* .loader-container {
-    height: 100vh;
-    width: 100vw;
-    font-family: Helvetica;
-  } */
-  
-  .loader-animation {
-    height: 20px;
-    width: 250px;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-
-  .loader--dot {
-    animation-name: loader;
-    animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    height: 20px;
-    width: 20px;
-    border-radius: 100%;
-    background-color: black;
-    position: absolute;
-    border: 2px solid white;
-  }
-  .loader--dot:first-child {
-    background-color: #8cc759;
-    animation-delay: 0.5s;
-  }
-  .loader--dot:nth-child(2) {
-    background-color: #8c6daf;
-    animation-delay: 0.4s;
-  }
-  .loader--dot:nth-child(3) {
-    background-color: #ef5d74;
-    animation-delay: 0.3s;
-  }
-  .loader--dot:nth-child(4) {
-    background-color: #f9a74b;
-    animation-delay: 0.2s;
-  }
-  .loader--dot:nth-child(5) {
-    background-color: #60beeb;
-    animation-delay: 0.1s;
-  }
-  .loader--dot:nth-child(6) {
-    background-color: #fbef5a;
-    animation-delay: 0s;
-  }
-  .loader--text {
-    position: absolute;
-    top: 200%;
-    left: 0;
-    right: 0;
-    width: 4rem;
-    margin: auto;
-  }
-  .loader--text:after {
-    content: "Loading";
-    font-weight: bold;
-    animation-name: loading-text;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes loader {
-    15% {
-      transform: translateX(0);
-    }
-    45% {
-      transform: translateX(230px);
-    }
-    65% {
-      transform: translateX(230px);
-    }
-    95% {
-      transform: translateX(0);
-    }
-  }
-  @keyframes loading-text {
-    0% {
-      content: "Loading";
-    }
-    25% {
-      content: "Loading.";
-    }
-    50% {
-      content: "Loading..";
-    }
-    75% {
-      content: "Loading...";
-    }
-  }
-  
-  
 
 /*============================================
         Nav-bar item click overlap solution
@@ -172,8 +32,8 @@ body{
 #about-us:before, #sponsors:before { 
     display: block;
     content: " "; 
-    margin-top: -140px; 
-    height: 140px;
+    margin-top: -100px; 
+    height: 100px;
     visibility: hidden;
 }
 
@@ -182,24 +42,29 @@ body{
     ========================*/
 
 #slider{
+    /* background: black url('../images/Slider1.jpg') no-repeat center; */
+    background-size: cover;
+    background: transparent;
+    height: 120vh;
+    overflow: hidden;
+}
+
+/* #slider{
+    background: black url('../images/Slider1.jpg');
     max-height: 120vh;
-    /* height: 100vh; */
     overflow: hidden;
 }
  
 #slider img{
     height: 120vh;
     width: 100% !important;
-/* 
-    height: 1200px;
-    width: 1800px; */
 }
 
 @media (min-width: 768px) {
     .carousel-indicators{
         transform: translateY(-20vh);
     }    
-}
+} */
 
 
 /*======================== 
@@ -211,10 +76,11 @@ body{
     display: block;
     padding: 30px;
     transform: translateY(-13vh);
+    width: 90vw;
 }
 
 #countdown-container2{
-    /* background-color: chartreuse; */
+    /* font-family: 'Roboto Slab', 'sans-serif'; */
     margin: 10px 30px 20px;
 }
 
@@ -227,7 +93,9 @@ body{
     margin-bottom: 2vh;
     font-size: 2.5rem;
     color: #fff;
-    font-weight: bold;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
 }
 
 /*========================= 
@@ -235,9 +103,7 @@ body{
     =======================*/
 
 #about-us p{
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.3rem;
-    /* text-justify: inter-word; */
+    font-size: 1rem;
 }
 
 .animated{
@@ -249,7 +115,6 @@ body{
 .zoomIn{
     opacity: 1;
 }
-
 
 /*==========================
         Gallery
@@ -271,10 +136,6 @@ body{
     opacity: 1;
 }
 
-#gallery .overlay-logo{
-    /* transform: translateY(10%); */
-}
-
 
 /*========================== 
         Timeline 
@@ -291,10 +152,10 @@ body{
 .main-timeline5 .timeline:before{content:"";width:100%;height:100%;box-shadow:-8px 0 5px -5px rgba(0,0,0,.5) inset;position:absolute;top:0;right:0;z-index:2}
 .main-timeline5 .timeline-icon{width:210px;height:210px;border-radius:50%;border:25px solid transparent;border-top-color:#f44556;border-right-color:#f44556;z-index:1;transform:rotate(45deg)}
 .main-timeline5 .year{display:block;width:110px;height:110px;line-height:110px;border-radius:50%;background:#fff;box-shadow:0 0 20px rgba(0,0,0,.4);font-size:30px;font-weight:700;color:#f44556;text-align:center;transform:rotate(-45deg)}
-.main-timeline5 .timeline-content{width:35%;float:right;background:#f44556;padding:30px 20px;margin:50px 0;z-index:1;position:relative}
+.main-timeline5 .timeline-content{width:35%;float:right;background:#f44556;padding:30px 20px;margin:50px 0;z-index:1;position:relative;height: 10.4rem;}
 .main-timeline5 .timeline-content:before{content:"";width:20%;height:15px;background:#f44556;position:absolute;top:50%;left:-20%;z-index:-1;transform:translateY(-50%)}
-.main-timeline5 .title{font-size:20px;font-weight:700;color:#fff;margin:0 0 10px}
-.main-timeline5 .description{font-size:16px;color:#fff;line-height:24px;margin:0}
+.main-timeline5 .title{font-size:1.5rem;font-weight:700;color:#fff;margin:0 0 10px}
+.main-timeline5 .description{font-size:1.3rem;color:#fff;line-height:24px;margin:0}
 .main-timeline5 .timeline:nth-child(2n):before{box-shadow:8px 0 5px -5px rgba(0,0,0,.5) inset}
 .main-timeline5 .timeline:nth-child(2n) .timeline-icon{transform:rotate(-135deg);border-top-color:#e97e2e;border-right-color:#e97e2e}
 .main-timeline5 .timeline:nth-child(2n) .year{transform:rotate(135deg);color:#e97e2e}
@@ -311,31 +172,28 @@ body{
 .main-timeline5 .timeline-content:before{left:-18%}
 .main-timeline5 .timeline:nth-child(2n) .timeline-content:before{right:-18%}
 }
-@media only screen and (max-width:990px){.main-timeline5 .timeline{margin-top:-127px}
-.main-timeline5 .timeline-content:before{left:-2%}
+@media only screen and (max-width:990px){
+
+.main-timeline5 .timeline{margin-top:-127px}
+.main-timeline5 .timeline-content:before{left:-2%;}
 .main-timeline5 .timeline:nth-child(2n) .timeline-content:before{right:-2%}
 }
 @media only screen and (max-width:767px){.main-timeline5 .timeline{margin-top:0;overflow:hidden}
 .main-timeline5 .timeline:before,.main-timeline5 .timeline:nth-child(2n):before{box-shadow:none}
 .main-timeline5 .timeline-icon,.main-timeline5 .timeline:nth-child(2n) .timeline-icon{margin-top:-30px;margin-bottom:20px;position:relative;transform:rotate(135deg)}
 .main-timeline5 .timeline:nth-child(2n) .year,.main-timeline5 .year{transform:rotate(-135deg)}
-.main-timeline5 .timeline-content,.main-timeline5 .timeline:nth-child(2n) .timeline-content{width:100%;float:none;border-radius:0 0 20px 20px;text-align:center;padding:25px 20px;margin:0 auto}
-.main-timeline5 .timeline-content:before,.main-timeline5 .timeline:nth-child(2n) .timeline-content:before{width:15px;height:25px;position:absolute;top:-22px;left:50%;z-index:-1;transform:translate(-50%,0)}
+.main-timeline5 .timeline-content,.main-timeline5 .timeline:nth-child(2n) .timeline-content{width:100%;float:none;border-radius:0 0 20px 20px;text-align:center;padding:25px 20px;margin:0 auto;}
+.main-timeline5 .timeline-content:before,.main-timeline5 .timeline:nth-child(2n) .timeline-content:before{width:15px;height:25px;position:absolute;top:-22px;left:50%;z-index:-1;transform:translate(-50%,0);}
 }
 #timeline .year{
-  font-size: 1.4em;
+  font-size: 1.5rem;
 }
 
 /* ===================== 
     Sponsors 
     ====================== */
 
-#sponsors .sponsor-row{
-    /* border: black solid 2px; */
-}
-
 #sponsors .sponsor-box{
-    /* border: #bdc3c7 solid 2px; */
     text-align: center;
     padding: 1% 2%;
 }

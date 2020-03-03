@@ -5,320 +5,251 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Cache control -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="util/bootstrap.min.css"> -->
 
     <script src="https://kit.fontawesome.com/68b6a34bd3.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="style/common.css">
     <link rel="stylesheet" type="text/css" href="style/apply.css">
 
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/nutech_logo_label.svg" type="image/x-icon">
+    <link rel="icon" href="images/tab_logo.svg" type="image/x-icon">
 
     <title>HackNUthon | CSI | Application Form</title>
 </head>
 <body>
-  <div id="navigationbar" class="navbar shadow fixed-top navbar-expand-md navbar-dark nav-after-scroll">
-    
-    <a id="main-logo-container" href="index.html">
-      <img id="main-logo" class="navbar-brand" src="images/logo.png" alt="HackNUthon">
-    </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div id="navbarContent" class="collapse navbar-collapse">
-      <ul class="navbar-nav mx-md-auto">
-        <li class="nav-item mt-3 mt-md-auto">
-          <a href="index.html" class="nav-link nava">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="index.html#about-us" class="nav-link scroll-onclick nava">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a href="index.html#sponsors" class="nav-link scroll-onclick nava">Sponsor</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a href="#" id="supportDropdown" class="nav-link nava" role="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
-            Support
-          </a>
-          <div class="dropdown-menu" aria-labelledby="supportDropdown">
-            <a href="#footer" class="dropdown-item">Contact Us</a>
-            <a href="faq.html" class="dropdown-item">FAQs</a>
-            <a href="learning-resources.html" class="dropdown-item">Learning Resources</a>
-          </div>
-        </li>
-      </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="details.html" class="nav-link btn btn-outline-danger navbtn">Details</a>
-        </li>
-        <li class="nav-item">
-          <a href="apply.html" class="nav-link btn btn-outline-danger navbtn">Apply Now</a>
-        </li>
-      </ul>   
+  <div id="preloader" class="preloader-bg">
+    <div class="row h-100">
+      <div class="my-auto col-12">
+        <div class="preloader-contant">
+          <img class="preloader-logo d-block mx-auto animated pulse infinite fast" style="opacity: 1;" src="images/logo_label.svg" alt="HackNUthon">
+        </div>
+        <div class="loader-animation mt-5">
+          <div class='loader--dot'></div>
+          <div class='loader--dot'></div>
+          <div class='loader--dot'></div>
+          <div class='loader--dot'></div>
+          <div class='loader--dot'></div>
+          <div class='loader--dot'></div>
+          <div class='loader--text'></div>
+        </div>
+      </div>
     </div>
   </div>
+
+  <div id="loadNavbar"></div>
   
-  <!-- <div id="title-head" class="auto-container">
+  <div id="title-head" class="auto-container">
     <div class="intro-img">
       <img src="images/Slider1.jpg" alt="intro-img" class="img-fluid">
-      <h1 class="text-center" tabindex="-1">Frequently Asked Questions</h1>
+      <h1 class="text-center" tabindex="-1">Registration Form</h1>
     </div>
   </div>
-   -->
 
-   <!-- <div class="embed-responsive embed-responsive-21by9">
-    <iframe style="width: 100%; height: 1200px;" class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSfXAQH2ebO0gkrfLDjy0JnEkDC2-DAS4a3UgSnDtXcavExReA/viewform?embedded=true" frameborder="0">Loading…</iframe>
-  </div> -->
-
-  <!-- <iframe style="width: 100%; height: 800px; overflow:hidden;" scrolling="no" src="https://docs.google.com/forms/d/e/1FAIpQLSfXAQH2ebO0gkrfLDjy0JnEkDC2-DAS4a3UgSnDtXcavExReA/viewform?embedded=true" frameborder="0">Loading…</iframe> -->
-
-
-  <!-- <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfXAQH2ebO0gkrfLDjy0JnEkDC2-DAS4a3UgSnDtXcavExReA/formResponse" method="POST">
-    <div>
-      <label>Name</label>
-      <input name="entry.323452889" type="text">
-    </div>
-    <div>
-      <label>Address</label>
-      <textarea name="entry.1065046570" cols="30" rows="10"></textarea>
-    </div>
-    <div>
-      <label>Phone number</label>
-      <input name="entry.1166974658" type="text">
-    </div>
-    <div>
-      <label>Comments</label>
-      <textarea name="entry.839337160" cols="30" rows="10"></textarea>
-    </div>
-    <button onclick="window.top.location.assign('index.html')" type="submit">Submit</button>
-  </form> -->
-
-  <form id="test-form">
-    <div>
-      <label>Team Name</label>
-      <input name="TeamName" type="text">
-    </div>
-    <div>
-      <label>Collage</label>
-      <input name="CollageName" type="text">
-    </div>
-    <div class="mem1">
-      <div>
-        <label>Name</label>
-        <input name="Name1" type="text">
-      </div>
-      <div>
-        <label>Contect Number</label>
-        <input name="MNo1" type="number">
-      </div>
-      <div>
-        <label>Email</label>
-        <input name="Email1" type="email">
-      </div>
-      <div>
-        <label>Github Profile</label>
-        <input name="Git1" type="text">
-      </div>
-      <div>
-        <label>LinkedIn Profile</label>
-        <input name="LinkedIn1" type="text">
-      </div>
-      <div>
-        <label>Write you previous experience of hackthon or past projects</label>
-        <textarea name="exp1" cols="30" rows="10"></textarea>
+  <form class="container py-3">
+    <div class="sections mb-3 rounded">
+      <div class="title rounded p-3" data-toggle="collapse" data-target="#team-detail">Team Detail <i class="fas fa-caret-down"></i></div>
+      <div id="team-detail" class="collapse show">
+        <div class="p-3 form-group">
+          <label for="teamName">Team Name</label>
+          <input id="teamName" name="teamName" class="form-control" type="text">
+          <small id="teamNameHelp" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group">
+          <label for="clg">College Name</label>
+          <input id="clg" name="CollageName" class="form-control" type="text">
+          <small id="clgHelp" class="form-text text-danger"></small>
+        </div>
       </div>
     </div>
-
-    <div class="mem2">
-      <div>
-        <label>Name</label>
-        <input name="Name2" type="text">
-      </div>
-      <div>
-        <label>Contect Number</label>
-        <input name="MNo2" type="number">
-      </div>
-      <div>
-        <label>Email</label>
-        <input name="Email2" type="email">
-      </div>
-      <div>
-        <label>Github Profile</label>
-        <input name="Git2" type="text">
-      </div>
-      <div>
-        <label>Linked In Profile</label>
-        <input name="LinkedIn2" type="text">
-      </div>
-      <div>
-        <label>Write you previous experience of hackthon or past projects</label>
-        <textarea name="exp2" cols="30" rows="10"></textarea>
-      </div>
-    </div>
-
-    <div class="mem3">
-      <div>
-        <label>Name</label>
-        <input name="Name3" type="text">
-      </div>
-      <div>
-        <label>Contect Number</label>
-        <input name="MNo3" type="number">
-      </div>
-      <div>
-        <label>Email</label>
-        <input name="Email3" type="email">
-      </div>
-      <div>
-        <label>Github Profile</label>
-        <input name="Git3" type="text">
-      </div>
-      <div>
-        <label>Linked In Profile</label>
-        <input name="LinkedIn3" type="text">
-      </div>
-      <div>
-        <label>Write you previous experience of hackthon or past projects</label>
-        <textarea name="exp3" cols="30" rows="10"></textarea>
+    
+    <div class="sections mb-3 rounded">
+      <div class="title rounded p-3 col-12 collapsed" data-toggle="collapse" data-target="#mem1">Member 1 (Team Leader) <i class="fas fa-caret-down"></i></div>
+      <div id="mem1" class="form-row collapse">
+        <small class="form-text text-danger px-3">All further communication will be done with team leader only.</small>
+        <div class="p-3 form-group col-12">
+          <label for="n1">Name</label>
+          <input id="n1" name="Name1" class="form-control" type="text">
+          <small id="n1Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="mno1">Contect Number</label>
+          <input id="mno1" class="form-control" name="MNo1" type="text">
+          <small id="mno1Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="m1">Email</label>
+          <input id="m1" class="form-control" name="Email1" type="email">
+          <small id="m1Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="g1">Github Profile</label>
+          <input id="g1" class="form-control" name="Git1" type="text">
+          <small id="g1Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="l1">LinkedIn Profile</label>
+          <input id="l1" class="form-control" name="LinkedIn1" type="text">
+          <small id="l1Help" class="form-text text-danger"></small>
+        </div>
       </div>
     </div>
-
-    <div class="mem4">
-      <div>
-        <label>Name</label>
-        <input name="Name4" type="text">
-      </div>
-      <div>
-        <label>Contect Number</label>
-        <input name="MNo4" type="number">
-      </div>
-      <div>
-        <label>Email</label>
-        <input name="Email4" type="email">
-      </div>
-      <div>
-        <label>Github Profile</label>
-        <input name="Git4" type="text">
-      </div>
-      <div>
-        <label>Linked In Profile</label>
-        <input name="LinkedIn4" type="text">
-      </div>
-      <div>
-        <label>Write you previous experience of hackthon or past projects</label>
-        <textarea name="exp4" cols="30" rows="10"></textarea>
+    
+    <div class="sections mb-3 rounded">
+      <div class="title rounded p-3 col-12 collapsed" data-toggle="collapse" data-target="#mem2">Member 2 <i class="fas fa-caret-down"></i></div>
+      <div id="mem2" class="form-row collapse">
+        <div class="p-3 form-group col-12">
+          <label for="n2">Name</label>
+          <input id="n2" class="form-control" name="Name2" type="text">
+          <small id="n2Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="mno2">Contect Number</label>
+          <input id="mno2" class="form-control" name="MNo2" type="text">
+          <small id="mno2Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="m2">Email</label>
+          <input id="m2" class="form-control" name="Email2" type="email">
+          <small id="m2Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="g2">Github Profile</label>
+          <input id="g2" class="form-control" name="Git2" type="text">
+          <small id="g2Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="l2">LinkedIn Profile</label>
+          <input id="l2" class="form-control" name="LinkedIn2" type="text">
+          <small id="l2Help" class="form-text text-danger"></small>
+        </div>
       </div>
     </div>
-    <div>
-      <label>Domain</label>
-      <input type="text" name="domain">
-    </div>
-    <div>
-      <label>Problem Statement ( Please be elaborate )</label>
-      <input type="text" name="problem">
-    </div>
-    <div>
-      <label>Proposed Solution</label>
-      <textarea name="solution" cols="30" rows="10"></textarea>
-    </div>
-    <button type="submit" id="submit-form">Submit</button>
-  </form>
-  
-  <div id="footer" class="container-fluid pt-md-4 px-md-2 pt-5">
-    <div class="row">
-      <div id="footer-logo" class="col-12 col-md-4 px-5 py-3 text-center">
-        <img src="images/logo.png" class="img-fluid">
+    
+    <div class="sections mb-3 rounded">
+      <div class="title rounded p-3 col-12 collapsed" data-toggle="collapse" data-target="#mem3">Member 3 <i class="fas fa-caret-down"></i></div>
+      <div id="mem3" class="form-row collapse">
+        <div class="p-3 form-group col-12">
+          <label for="n3">Name</label>
+          <input id="n3" class="form-control" name="Name3" type="text">
+          <small id="n3Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="mno3">Contect Number</label>
+          <input id="mno3" class="form-control" name="MNo3" type="text">
+          <small id="mno3Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="m3">Email</label>
+          <input id="m3" class="form-control" name="Email3" type="email">
+          <small id="m3Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="g3">Github Profile</label>
+          <input id="g3" class="form-control" name="Git3" type="text">
+          <small id="g3Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="l3">LinkedIn Profile</label>
+          <input id="l3" class="form-control" name="LinkedIn3" type="text">
+          <small id="l3Help" class="form-text text-danger"></small>
+        </div>
       </div>
-      <div class="container d-block d-md-none seperator w-75 mx-auto">&nbsp;</div>
-      <div class="col-12 col-md-4 py-3 pt-md-0 text-center text-md-left">
-        <h2>Contact Us</h2>          
-        <p>
-          <div>
-            Priya Roy <br/>
-            <i class="fas fa-phone-alt"></i>
-            <a href="tel:+917600052636">
-              +917600052636
-            </a>
-            <br/>
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:17bce103@nirmauni.ac.in">
-            17bce103@nirmauni.ac.in
-            </a>
+    </div>
+    
+    <div class="sections mb-3 rounded">  
+      <div class="title rounded p-3 col-12 collapsed" data-toggle="collapse" data-target="#mem4">Member 4 <i class="fas fa-caret-down"></i></div>
+      <div id="mem4" class="form-row collapse">
+        <div class="p-3 form-group col-12">
+          <label for="n4">Name</label>
+          <input id="n4" class="form-control" name="Name4" type="text">
+          <small id="n4Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="mno4">Contect Number</label>
+          <input id="mno4" class="form-control" name="MNo4" type="text">
+          <small id="mno4Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="m4">Email</label>
+          <input id="m4" class="form-control" name="Email4" type="email">
+          <small id="m4Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="g4">Github Profile</label>
+          <input id="g4" class="form-control" name="Git4" type="text">
+          <small id="g4Help" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group col-6">
+          <label for="l4">LinkedIn Profile</label>
+          <input id="l4" class="form-control" name="LinkedIn4" type="text">
+          <small id="l4Help" class="form-text text-danger"></small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="sections mb-3 rounded">
+      <div class="title rounded p-3 collapsed" data-toggle="collapse" data-target="#exp-detail">Past Experience <i class="fas fa-caret-down"></i></div>
+      <div id="exp-detail" class="collapse">
+        <div class="p-3 form-group">
+          <label for="exp">Write team member's previous experience of hackthon or past projects</label>
+          <textarea id="exp" class="form-control" name="exp" cols="30" rows="5"></textarea>
+          <div class="pb-3">
+            <small id="expHelp" class="form-text text-danger d-inline"></small>
+            <small class="form-text text-muted d-inline float-right">Minimum 150 words</small>
           </div>
-          <br/>
-          <div>
-            Rajat Singh <br/>
-            <i class="fas fa-phone-alt"></i>
-            <a href="tel:+919773109528">
-              +919773109528
-            </a>
-            <br/>
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:17bce099@nirmauni.ac.in">
-            17bce099@nirmauni.ac.in
-            </a>
-          </div>
-        </p>
-        <!-- <a href="faq.html">
-          FAQ
-        </a> -->
+        </div>
       </div>
-      <div class="container d-block d-md-none seperator w-75 mx-auto">&nbsp;</div>
-      <div id="social_links" class="col-12 col-md-4 py-3 pt-md-0 text-center text-md-left">
-        <h2>FOLLOW US ON</h2>
-        <div style="font-size: 50px; color: white;">
-          <a href="https://twitter.com/csinirma" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <!-- <i class="fab fa-twitter-square"></i> -->
-          
-          <a href="https://www.instagram.com/csiitnu/" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
+    </div>
 
-          <a href="https://www.facebook.com/csinu" target="_blank">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <!-- <i class="fab fa-facebook-f"></i> -->
-          <!-- <i class="fab fa-facebook-square"></i> -->
-
-          <!-- <i class="fab fa-linkedin"></i> -->
-          <!-- <i class="fab fa-linkedin-in"></i> -->
-          
+    <div class="sections mb-3 rounded">
+      <div class="title rounded p-3 collapsed" data-toggle="collapse" data-target="#detail-end">About Problem Statement <i class="fas fa-caret-down"></i></div>
+      <div id="detail-end" class="collapse">
+        <div class="p-3 form-group">
+          <label for="domain">Domain</label>
+          <input id="domain" class="form-control" type="text" name="domain">
+          <small id="domainHelp" class="form-text text-danger"></small>
+        </div>
+        <div class="p-3 form-group">
+          <label for="pro">Problem Statement</label>
+          <input id="pro" class="form-control" type="text" name="problem">
+          <div>
+            <small id="proHelp" class="form-text text-danger d-inline"></small>  
+            <small class="form-text text-muted d-inline float-right">Please be elaborate</small>
+          </div>
           
         </div>
-        <!-- <a href="faq.html">
-          FAQ
-        </a> -->
-      </div>
-      <div class="container d-block d-md-none seperator w-75 mx-auto">&nbsp;</div>
-    </div>
-    
-    <div class="row pt-3 pt-md-0">
-      <div id="developer" class="col-6">
-        <p class="align-center text-center">
-          Developed By Bhargav Prajapati
-        </p>
-      </div>
-      <div id="developer" class="col-6">
-        <p class="align-center text-center">
-          <i class="far fa-copyright"></i>2020 all rights reserved
-        </p>
+        <div class="p-3 form-group">
+          <label for="sol">Proposed Solution</label>
+          <textarea id="sol" class="form-control" name="solution" cols="30" rows="5"></textarea>
+          <div class="pb-3">
+            <small id="solHelp" class="form-text text-danger d-inline"></small>
+            <small class="form-text text-muted d-inline float-right">Minimum 200 words. Be elaborate</small>
+          </div>
+          
+        </div>
       </div>
     </div>
+    <small id="submitHelp" class="form-text text-danger pl-3 pb-1"></small>
+    <button class="btn btn-lg btn-block mx-auto" type="submit" id="submit-form">Submit</button>
+  </form>
+  
+  <div id="SuccessMsg" class="p-3 m-5 rounded">
+    <h3>You are successfully Registered for HackNUthon.</h1>
+    <p>Your Registration number is <span id="regNo"></span>. All further communication will be done to <span id="successEmail"></span>.</p>
   </div>
 
+  <div id="loadFooter"></div>
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-    <!-- <script src="util/jquery-3.4.1.js"></script>
-    <script src="util/popper.min.js"></script>
-    <script src="util/bootstrap.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script src="script/common.js"></script>
     <script src="script/apply.js"></script>

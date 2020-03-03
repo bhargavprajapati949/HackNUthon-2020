@@ -1,20 +1,40 @@
-// //change style of navbar after hero section is scrolled
+/*====================================
+    Preloader
+.   =================================== */
 
-// const slider = document.querySelector('#slider');
-// const navBar = document.getElementById('navigationbar');
+$('document').ready(function(){
+    setTimeout(function(){
+        $('#preloader').fadeOut(1000);
+    }, 2000);
+});
 
-// const navbarScrollEffect = new IntersectionObserver(function(entries, navbarScrollEffect){
-//   entries.forEach(entry => {
-//     // console.log(entry.isIntersecting)
-//       if(entry.isIntersecting == true){
-//         navBar.classList.remove('nav-after-scroll');
-//       }
-//       else{
-//         navBar.classList.add('nav-after-scroll');
-//       }
-//   })
-// },/*options*/{
-//   rootMargin: "-90px 0px 0px 0px"
-// })
+/*=======================================
+    Load Navbar
+.   ===================================== */
 
-// navbarScrollEffect.observe(slider);
+$.get("navbar.html", function(data){
+    $("#loadNavbar").after(data);
+    $("#loadNavbar").remove();
+});
+
+//Navbar scroll effect
+$(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    
+    if(scroll > 10){
+        $('#navigationbar').addClass("nav-after-scroll");
+    }
+    else{
+        $('#navigationbar').removeClass("nav-after-scroll");
+    }
+});
+
+/*=======================================
+    Load Footer
+.   ===================================== */
+
+$.get("footer.html", function(data){
+    $("#loadFooter").after(data);
+    $("#loadFooter").remove();
+});
+

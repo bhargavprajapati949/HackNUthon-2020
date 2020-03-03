@@ -1,3 +1,69 @@
-body{
-    padding-top: 15vh;
+/*=======================
+        Intro
+.    =====================*/
+
+.intro-img{
+    width: 100%;
+    overflow-y: hidden;
+    height: 400px;
+}
+
+.intro-img h1{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 110px;
+    color: black;
+    font-size: 2.5em;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .intro-img h1{
+        font-size: 4em;
+        top: 170px;
+    }
+}
+
+
+/*=======================================
+            Form Design
+.   =====================================*/
+
+.sections{
+    background-color: #f5f6fa;
+}
+
+.title{
+    background-color: #dcdde1;
+    cursor: context-menu;
+}
+
+.title svg{
+    float: right;
+    font-size: 1.3em;
+    transform: rotateZ(180deg);
+    transition-duration: .5s;
+}
+
+.title.collapsed svg{
+    transform: rotateZ(0deg);
+}
+
+.form-group{
+    box-sizing: border-box;
+}
+
+#submit-form{
+    color: #fff;
+    background-color: #6d3cc1;
+}
+
+/*======================================
+            Success Message
+.   ====================================*/
+
+#SuccessMsg{
+    display: none;
+    background-color: #7bed9f;
 }

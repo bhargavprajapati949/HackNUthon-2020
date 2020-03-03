@@ -31,8 +31,9 @@
 
 .qa-box{
     padding: 8px;
-    /* background-color: black; */
     text-align: justify;
+    border-right: 1px solid #bdc3c7;
+    border-left: 1px solid #bdc3c7;
 }
 
 .que-box{
@@ -42,20 +43,22 @@
 .qa-box svg{
     float: right;
     font-size: 1.3em;
+    transform: rotateZ(180deg);
+    transition-duration: .5s;
+}
+
+.qa-box.collapsed svg{
+    transform: rotateZ(0deg);
 }
 
 .ans-box{
-    /* background-color: #ecf0f1; */
     padding: 5px 10px;
-}
-
-.qa-box:nth-child(even){
-    /* background-color: ; */
 }
 
 .qa-box:nth-child(odd){
     background-color: #bdc3c7;
 }
+
 
 .qa-box:first-child{
     border-top-left-radius: 6px;

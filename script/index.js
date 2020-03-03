@@ -1,35 +1,7 @@
-//preloader
-
-$('document').ready(function(){
-  $('#preloader').fadeOut(1000);
-})
-
-//change style of navbar after hero section is scrolled
-
-const slider = document.querySelector('#slider');
-const navBar = document.getElementById('navigationbar');
-
-const navbarScrollEffect = new IntersectionObserver(function(entries, navbarScrollEffect){
-  entries.forEach(entry => {
-    // console.log(entry.isIntersecting)
-      if(entry.isIntersecting == true){
-        navBar.classList.remove('nav-after-scroll');
-      }
-      else{
-        navBar.classList.add('nav-after-scroll');
-      }
-  })
-},/*options*/{
-  rootMargin: "-90px 0px 0px 0px"
-})
-
-navbarScrollEffect.observe(slider);
-
-
 //main countdown
 
 document.addEventListener('DOMContentLoaded', () => {
-    var timeOfHackathon = new Date(2020, 2, 15, 9, 0) / 1000;
+    var timeOfHackathon = new Date(2020, 2, 18, 9, 0) / 1000;
     // var flipdown = new FlipDown(timeOfHackathon, 'countdown-main').start();
     new FlipDown(timeOfHackathon, 'countdown-main',{
       theme: 'light'
