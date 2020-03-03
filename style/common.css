@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Oxanium&display=swap");
+
 html{
     scroll-behavior: smooth;
 }
@@ -6,6 +8,7 @@ body{
   overflow-x: hidden;
   font-family: 'Lato', 'sans-serif';
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 /*===========================
@@ -169,7 +172,7 @@ body{
 }
 
 .nav-item.active .nava{
-    border-bottom: .2rem solid yellow;
+    border-bottom: .2rem solid #6d3cc1;
 }
 
 .nav-link{
@@ -178,14 +181,14 @@ body{
 }
 
 #navbarContent .nava{
-    color: tomato;
+    color: #00afef;
     font-size: larger;
     transition: ease-in-out 1s;
 }
 
 .navbtn{
     margin: auto .4em;
-    color: #e15f41 !important;
+    color: #00afef !important;
 }
 
 .navbtn:hover{
@@ -215,7 +218,7 @@ body{
     height: 3px;
     bottom: 0;
     left: 5%;
-    background: yellow;
+    background: #6d3cc1;
     visibility: hidden;
     border-radius: 5px;
     transform: scaleX(0);
@@ -238,6 +241,37 @@ body{
 /* .dropdown-menu{
     transition: all 5s linear;
 } */
+
+
+
+/*===============
+    Introduction
+    =================*/
+
+    .intro-img{
+      background: #341f97 url("../images/pageHeader.jpg") no-repeat center;
+      background-size: cover;
+      height: 60vh;
+  }
+  
+  .intro-img h1{
+      display: block;
+      width: 100%;
+      position: absolute;
+      right: 20vw;
+      top: 25vh;
+      font-size: 3rem;
+      font-weight: 750;
+      color: #00afef;
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+      .intro-img h1{
+          font-size: 4em;
+      }
+  }
+  
 
 
 /* ========================

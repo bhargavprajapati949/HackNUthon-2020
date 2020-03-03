@@ -21,8 +21,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
 
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"> -->
-
     <link rel="stylesheet" type="text/css" href="style/common.css">
     <link rel="stylesheet" type="text/css" href="style/index.css">
     
@@ -33,7 +31,7 @@
   </head>
   <body>
     
-    <div id="preloader" class="preloader-bg">
+    <!-- <div id="preloader" class="preloader-bg">
       <div class="row h-100">
         <div class="my-auto col-12">
           <div class="preloader-contant">
@@ -50,14 +48,69 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     
-  <div id="loadNavbar"></div>  
+  <!-- <div id="loadNavbar"></div>   -->
 
-  <div id="slider" data-parallax="scroll" data-image-src="images/Slider1.jpg" data-z-index="0">
+  <div id="navigationbar" class="navbar fixed-top navbar-expand-md navbar-dark">
+    
+    <a id="main-logo-container" href="index.html">
+      <img id="main-logo" class="navbar-brand" src="images/logo.svg" alt="HackNUthon">
+    </a>
 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbarContent" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-md-auto mr-md-5">
+        <li class="nav-item active mt-3 mt-md-auto">
+          <a href="#hero" class="nav-link nava">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about-us" class="nav-link scroll-onclick nava">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#sponsors" class="nav-link scroll-onclick nava">Sponsor</a>
+        </li>
+        <li class="nav-item">
+          <a href="#footer" class="nav-link scroll-onclick nava">Contect Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="faq.html" class="nav-link nava">FAQ</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a href="learning-resources.html" class="nav-link nava">Learning Resources</a>
+        </li> -->
+        <!-- <li class="nav-item dropdown">
+          <a href="#" id="supportDropdown" class="nav-link nava" role="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+            Support
+          </a>
+          <div class="dropdown-menu" aria-labelledby="supportDropdown">
+            <a href="#footer" class="dropdown-item">Contact Us</a>
+            <a href="faq.html" class="dropdown-item">FAQs</a>
+            <a href="learning-resources.html" class="dropdown-item">Learning Resources</a>
+          </div>
+        </li> -->
+      </ul>
+    </div>
   </div>
 
+  <div id="hero" class="text-center">
+    <div id="slider" data-parallax="scroll" data-image-src="images/Slider1.jpg" data-z-index="0"></div>
+    <div id="heroSection">
+      <div class="head-wrapper">
+        <p class="head">NU-Tech & CSI <span><br/>Presents</span></p>
+      </div>
+      <img class="logo-hero d-inline-block mx-auto" src="images/logo.svg" alt="HackNUThon">
+      <p class="head2">18 - 19 March @Nirma University, Ahmedabad</p>
+      <div>
+        <a href="details.html" class="nav-link btn btn-outline-primary navbtn d-inline-block">Details</a>
+        <a href="apply.html" class="nav-link btn btn-outline-primary navbtn d-inline-block">Apply Now</a>
+      </div>
+    </div>
+  </div>
+  
   <!-- <div id="slider" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#slider" data-side-to="0" class="active"></li>
@@ -104,7 +157,7 @@
     </div>
     <div id="intro" class="row">
       <div class="col-12 col-md-4 my-md-auto">
-        <img src="images/logo.svg" class="img-fluid p-5 animated addfadeInLeft" alt="HackNUthon logo">
+        <img src="images/logo_label.svg" class="img-fluid p-5 animated addfadeInLeft" alt="HackNUthon logo">
       </div>
       <div class="col-12 col-md-8 p-5 ">
         <h2 class="sub-title">What is HackNUthon?</h2>
@@ -171,28 +224,44 @@
         
       </div>
       
-      <div id="gallery" class="container-fluid p-2">
+      <div id="gallery" class="container-fluid">
         <div class="row">
           <div class="col-12 text-center">
             <h1 class="text-center animated addzoomIn title-sec d-inline-block">Gallery</h1>
           </div>
         </div>
-        <div class="row">
-          <div class="img-box col-12 col-md-6">
-            <img class="img-fluid" src="images/gallery1.png" alt="img1">
-            <div class="overlay"><img src="images/logo.svg" alt="logo" class="img-fluid p-5 overlay-logo"></div>
+        <div class="g-img-box row mx-auto">
+          <div class="s-img-box col-12 col-md-6">
+            <div class="s-img-box2">
+              <img class="g-img img-fluid" src="images/gallery1.png" alt="img1">
+              <div class="overlay">
+                <img src="images/logo.svg" alt="logo" class="img-fluid my-auto g-overlay-img">
+              </div>
+            </div>
           </div>
-          <div class="img-box col-12 col-md-6 p-3">
-            <img class="img-fluid" src="images/gallery2.png" alt="img2">
-            <div class="overlay"><img src="images/logo.svg" alt="logo" class="img-fluid p-5 overlay-logo"></div>
+          <div class="s-img-box col-12 col-md-6">
+            <div class="s-img-box2">
+              <img class="g-img img-fluid" src="images/gallery2.png" alt="img2">
+              <div class="overlay">
+                <img src="images/logo.svg" alt="logo" class="img-fluid my-auto g-overlay-img">
+              </div>
+            </div>
           </div>
-          <div class="img-box col-12 col-md-6 p-3">
-            <img class="img-fluid" src="images/gallery3.png" alt="img3">
-            <div class="overlay"><img src="images/logo.svg" alt="logo" class="img-fluid p-5 overlay-logo"></div>
+          <div class="s-img-box col-12 col-md-6">
+            <div class="s-img-box2">
+              <img class="g-img img-fluid" src="images/gallery3.png" alt="img3">
+              <div class="overlay">
+                <img src="images/logo.svg" alt="logo" class="img-fluid my-auto g-overlay-img">
+              </div>
+            </div>
           </div>
-          <div class="img-box col-12 col-md-6 p-3">
-            <img class="img-fluid" src="images/gallery4.png" alt="img4">
-            <div class="overlay"><img src="images/logo.svg" alt="logo" class="img-fluid p-5 overlay-logo"></div>
+          <div class="s-img-box col-12 col-md-6">
+            <div class="s-img-box2">
+              <img class="g-img img-fluid" src="images/gallery4.png" alt="img4">
+              <div class="overlay">
+                <img src="images/logo.svg" alt="logo" class="img-fluid my-auto g-overlay-img">
+              </div>
+            </div>
           </div>
         </div>
       </div>
