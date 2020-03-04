@@ -5,7 +5,7 @@
 $('document').ready(function(){
     setTimeout(function(){
         $('#preloader').fadeOut(1000);
-    }, 2000);
+    }, 1000);
 });
 
 /*=======================================

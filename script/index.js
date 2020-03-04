@@ -1,3 +1,15 @@
+
+//animate hero section 
+$('document').ready(function(){
+  setTimeout(function(){
+    $("#hero .head").removeClass("d-none").addClass("animated zoomIn");
+    $("#hero .logo-hero").removeClass("d-none").addClass("animated zoomIn d-inline-block");
+    $("#hero .head2").removeClass("d-none").addClass("animated zoomIn d-inline-block");
+    $("#hero .hero-btn").removeClass("d-none").addClass("animated zoomIn d-inline-block");
+  }, 2000);  
+});
+
+
 //main countdown
 
 document.addEventListener('DOMContentLoaded', () => {

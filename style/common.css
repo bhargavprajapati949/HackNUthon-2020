@@ -171,9 +171,9 @@ body{
     height: 12vh !important;
 }
 
-.nav-item.active .nava{
+.nava.active{
     border-bottom: .2rem solid #6d3cc1;
-}
+} 
 
 .nav-link{
     text-transform: uppercase;
@@ -195,15 +195,8 @@ body{
     color: #fff !important;
 }
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
-    .navbar-collapse{
-        background: rgba(0,0,0,.5);
-    }
-}
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) {
+/* Small devices (landscape phones, 768px)*/
+@media (max-width: 767.98px) {
     .navbar-collapse{
         background: rgba(0,0,0,.5);
     }
@@ -236,19 +229,16 @@ body{
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-menu {display: block;}
-
-/* .dropdown-menu{
-    transition: all 5s linear;
-} */
-
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 
 
 /*===============
     Introduction
     =================*/
 
-    .intro-img{
+  .intro-img{
       background: #341f97 url("../images/pageHeader.jpg") no-repeat center;
       background-size: cover;
       height: 60vh;
@@ -256,22 +246,43 @@ body{
   
   .intro-img h1{
       display: block;
-      width: 100%;
       position: absolute;
-      right: 20vw;
+      left: 12vw;
       top: 25vh;
       font-size: 3rem;
       font-weight: 750;
       color: #00afef;
   }
   
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-      .intro-img h1{
-          font-size: 4em;
-      }
+@media (max-width: 576px){
+  .intro-img h1{
+    top: 35vh;
+    left: 7px;
+    font-size: 2rem;
   }
-  
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .intro-img h1{
+    left: 5vw;
+    font-size: 2.3rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .intro-img h1{
+    font-size: 3rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .intro-img h1{
+    font-size: 3rem;
+  }
+}
 
 
 /* ========================
