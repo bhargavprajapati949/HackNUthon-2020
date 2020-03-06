@@ -10,3 +10,7 @@ body{
 .intro-img h1{
     left: 15vw !important;
 }
+
+.card{
+    height: 500px !important;
+}
