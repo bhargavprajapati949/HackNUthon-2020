@@ -129,13 +129,15 @@ var vldm2 = function(){
 
 var vldn3 = function(){
   if(notNull($("#n3").val()) == false){
-    $("#n3Help").text("Name cannot be empty");
-    return false;
+    $("#mno3").off('focusout');
+    $("#m3").off('focusout'); 
+    $("#mno3Help").text("");   
+    $("#m3Help").text("");
   }
   else{
-    $("#n3Help").text("");
+    $("#mno3").focusout(vldmno3);
+    $("#m3").focusout(vldm3);
     $("#submitHelp").text("");
-    return true;
   }
 }
 
@@ -165,13 +167,15 @@ var vldm3 = function(){
 
 var vldn4 = function(){
   if(notNull($("#n4").val()) == false){
-    $("#n4Help").text("Name cannot be empty");
-    return false;
+    $("#mno4").off('focusout');
+    $("#m4").off('focusout');
+    $("#mno4Help").text("");
+    $("#m4Help").text("");
   }
   else{
-    $("#n4Help").text("");
+    $("#mno4").focusout(vldmno4);
+    $("#m4").focusout(vldm4);
     $("#submitHelp").text("");
-    return true;
   }
 }
 
@@ -199,17 +203,17 @@ var vldm4 = function(){
   }
 }
 
-var vldexp = function(){
-  if($("#exp").val().length < 150){
-    $("#expHelp").text("Minimum 150 words required");
-    return false;
-  }
-  else{
-    $("#expHelp").text("");
-    $("#submitHelp").text("");
-    return true;
-  }
-}
+// var vldexp = function(){
+//   if($("#exp").val().length < 150){
+//     $("#expHelp").text("Minimum 150 words required");
+//     return false;
+//   }
+//   else{
+//     $("#expHelp").text("");
+//     $("#submitHelp").text("");
+//     return true;
+//   }
+// }
 
 var vlddomain = function(){
   if(notNull($("#domain").val()) == false){
@@ -258,15 +262,15 @@ $("#n2").focusout(vldn2);
 $("#mno2").focusout(vldmno2);
 $("#m2").focusout(vldm2);
 
-$("#n3").focusout(vldn3);
-$("#mno3").focusout(vldmno3);
-$("#m3").focusout(vldm3);
+$("#n3").on('focusout',vldn3);
+// $("#mno3").focusout(vldmno3);
+// $("#m3").focusout(vldm3);
 
-$("#n4").focusout(vldn4);
-$("#mno4").focusout(vldmno4);
-$("#m4").focusout(vldm4);
+$("#n4").on('focusout',vldn4);
+// $("#mno4").focusout(vldmno4);
+// $("#m4").focusout(vldm4);
 
-$("#exp").focusout(vldexp);
+// $("#exp").focusout(vldexp);
 
 $("#domain").focusout(vlddomain);
 $("#pro").focusout(vldpro);
@@ -301,27 +305,31 @@ function formvalid(){
   vldform = vldm2();
 
   //////////member 3
-  //Name
-  vldform = vldn3();
+  if($("#n3").val() != ""){
+    //Name
+    // vldform = vldn3();
 
-  //Contect Number
-  vldform = vldmno3();
+    //Contect Number
+    vldform = vldmno3();
 
-  //Email
-  vldform = vldm3();
-
+    //Email
+    vldform = vldm3();
+  }
+  
   //////////member 4
-  //Name
-  vldform = vldn4();
-
-  //Contect Number
-  vldform = vldmno4();
-
-  //Email
-  vldform = vldm4();
+  if($("#n4").val() != ""){
+    //Name
+    // vldform = vldn4();
+  
+    //Contect Number
+    vldform = vldmno4();
+  
+    //Email
+    vldform = vldm4();
+  }
 
   //Experience
-  vldform = vldexp();
+  // vldform = vldexp();
 
   //Domain
   vldform = vlddomain();
@@ -403,9 +411,9 @@ var successResponse = function(data){
     $("#regNo").text(data["data"]["regNo"]);
     $("#successEmail").text(data["data"]["email"]);
 
-    if(data["result"] == 201){
-      $("#SuccessMsg").append("Contect us, in case you don't receive conformation email from us.");
-    }
+    // if(data["result"] == 201){
+    //   $("#SuccessMsg").append("Contect us, in case you don't receive conformation email from us.");
+    // }
 
     $("#title-head h1").text("Successfully Registered");
 
