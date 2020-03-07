@@ -40,30 +40,13 @@
 }
 
 #heroSection .head2{
-    color: #13afae;
+    color: #00afef;
 }
 
 #heroSection .logo-hero{
     width: 80vw;
     height: 300px;
 }
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-}
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}
-
-
-
 
 
 /*============================================
@@ -93,30 +76,13 @@
     top: 0px;
 }
 
-/* #slider{
-    background: black url('../images/Slider1.jpg');
-    max-height: 120vh;
-    overflow: hidden;
-}
- 
-#slider img{
-    height: 120vh;
-    width: 100% !important;
-}
-
-@media (min-width: 768px) {
-    .carousel-indicators{
-        transform: translateY(-20vh);
-    }    
-} */
-
 
 /*======================== 
         CountDown 
     ======================== */
 
 #countdown-container1{
-    background-color: #1B1464;
+    background-color: #040533;
     display: block;
     padding: 30px;
     transform: translateY(-13vh);
@@ -139,7 +105,12 @@
 
 /*========================= 
         About Us 
-    =======================*/
+.   =======================*/
+
+#about-us{
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
 #about-us p{
     font-size: 1rem;
@@ -158,6 +129,10 @@
 /*==========================
         Gallery
 .   ========================*/
+
+#gallery{
+    padding-bottom: 30px;
+}
 
 #gallery .g-img-box{
     width: 95vw;
@@ -219,7 +194,7 @@
     ========================*/
 
 #timeline{
-    margin: 20px auto;
+    margin: 50px auto;
 }
 .main-timeline5{overflow:hidden;position:relative}
 .main-timeline5 .timeline{position:relative;margin-top:-79px}
@@ -272,8 +247,15 @@
 
 #sponsors .sponsor-box{
     text-align: center;
-    padding: 1% 2%;
+}
+
+#sponsors .sponsor-box img{
+    border: 1px solid rgba(0,0,0,.125);
 }
  
 
+/* Change color of section alternatively */
 
+#intro-box, #gallery{
+    background-color: #f1f2f6;
+}

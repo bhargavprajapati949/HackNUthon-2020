@@ -14,3 +14,7 @@ body{
 .card{
     height: 500px !important;
 }
+
+#themes{
+    background-color: #fafafa;
+}

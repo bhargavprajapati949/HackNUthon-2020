@@ -2,11 +2,19 @@
 //animate hero section 
 $('document').ready(function(){
   setTimeout(function(){
-    $("#hero .head").removeClass("d-none").addClass("animated zoomIn");
-    $("#hero .logo-hero").removeClass("d-none").addClass("animated zoomIn d-inline-block");
-    $("#hero .head2").removeClass("d-none").addClass("animated zoomIn d-inline-block");
-    $("#hero .hero-btn").removeClass("d-none").addClass("animated zoomIn d-inline-block");
-  }, 2000);  
+    $("#hero .head").removeClass("d-none").addClass("animated fadeInLeft");
+    
+    setTimeout(function(){
+      $("#hero .logo-hero").removeClass("d-none").addClass("animated zoomIn d-inline-block");
+
+      setTimeout(function(){
+        $("#hero .head2").removeClass("d-none").addClass("animated fadeInRight d-inline-block");
+        $("#hero .hero-btn").removeClass("d-none").addClass("animated fadeInRight d-inline-block");
+      }, 500);
+
+    },500);
+  
+  }, 1200);  
 });
 
 
