@@ -359,7 +359,7 @@ $('#submit-form').on('click', function(e) {
   }
 
   var formdata = {
-    'TeamName': $("input[name='TeamName']").val(),
+    'TeamName': $("input[name='teamName']").val(),
     'CollageName': $("input[name='CollageName']").val(),
 
     'Name1' : $("input[name='Name1']").val(),
@@ -387,7 +387,7 @@ $('#submit-form').on('click', function(e) {
     'LinkedIn4' : $("input[name='LinkedIn4']").val(),
     
     'exp' : $("textarea[name='exp']").val(),
-    'domain' : $("input[name='domain']").val(),
+    'domain' : $("select[name='domain']").val(),
     'problem' : $("input[name='problem']").val(),
     'solution' : $("textarea[name='solution']").val(),
     
