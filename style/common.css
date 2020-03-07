@@ -168,7 +168,8 @@ body{
 
 .nav-after-scroll{
     background-color: #1e272e !important;
-    height: 12vh !important;
+    height: 12vmin !important;
+    min-height: 80px;
 }
 
 .nava.active{
