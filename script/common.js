@@ -70,5 +70,5 @@ changeNavItemActiveClass = function ChangeClass() {
 
 $(document).scroll(function(){
     changeNavItemActiveClass();
-    console.log("lkdfshg");
+//     console.log("lkdfshg");
 });
