@@ -352,9 +352,11 @@ var url = 'https://script.google.com/macros/s/AKfycbyDImZKZqsqKvgxwFJHHcCG4rtA03
 
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
-
+  $(".submitLoading").css("display", "inline-block");
+  
   if(formvalid() == false){
     $("#submitHelp").text("There is some error in form first resolve it.");
+    $(".submitLoading").css("display", "none");
     return;
   }
 
@@ -401,12 +403,14 @@ $('#submit-form').on('click', function(e) {
     dataType: "json",
     data: formdata,
     success: function(response){
+      
       successResponse(response);
     },
   });
 })
 
 var successResponse = function(data){
+  
   if(data["result"] == 1 || data["result"] == 201){
     $("#regNo").text(data["data"]["regNo"]);
     $("#successEmail").text(data["data"]["email"]);
@@ -424,7 +428,7 @@ var successResponse = function(data){
   else{
     $("#submitHelp").html("Unable to submit form. Please try after sometime. If problem occurs multiple times then contect us with given error code." + "<br> Error code : " + data["result"]);
   }
-  
+  $(".submitLoading").css("display", "none");
   
 }
 
