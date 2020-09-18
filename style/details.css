@@ -11,8 +11,16 @@ body{
     left: 15vw !important;
 }
 
-.card{
-    height: 370px !important;
+.card{    
+    height: max-content;
+    min-height: 400px;
+}
+
+@media (max-width: 575.98px) {
+    .card{
+        height: min-content !important;
+        min-height: unset;
+    }
 }
 
 #themes{
