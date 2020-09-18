@@ -161,8 +161,6 @@ body{
     min-height: 80px;
     background-color: transparent;
     transition-duration: .5s;
-    /* padding-right: 0px;
-    padding-left: 0px; */
     width: 100vw;
 }
 
@@ -176,10 +174,6 @@ body{
     min-height: 80px;
 }
 
-.nava.active{
-    border-bottom: .2rem solid #6d3cc1;
-} 
-
 .nav-link{
     text-transform: uppercase;
     font-weight: 550;
@@ -188,7 +182,7 @@ body{
 #navbarContent .nava{
     color: #00afef;
     font-size: larger;
-    transition: ease-in-out 1s;
+    /* transition: ease-in-out 1s; */
 }
 
 .navbtn{
@@ -220,7 +214,7 @@ body{
     visibility: hidden;
     border-radius: 5px;
     transform: scaleX(0);
-    transition: .25s linear;
+    /* transition: .25s linear; */
 }
 
 #navbarContent .nava:hover:before,
@@ -228,6 +222,10 @@ body{
     visibility: visible;
     transform: scaleX(1);
 }
+
+.nava.active{
+  border-bottom: .2rem solid #6d3cc1;
+} 
 
 .nav-item{
     position: relative;

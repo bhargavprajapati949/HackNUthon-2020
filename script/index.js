@@ -9,6 +9,7 @@ $('document').ready(function(){
 
       setTimeout(function(){
         $("#hero .head2").removeClass("d-none").addClass("animated fadeInRight d-inline-block");
+        $("#hero .head15").removeClass("d-none").addClass("animated fadeInRight d-inline-block");
         $("#hero .hero-btn").removeClass("d-none").addClass("animated fadeInRight d-inline-block");
       }, 500);
 
@@ -21,12 +22,45 @@ $('document').ready(function(){
 //main countdown
 
 document.addEventListener('DOMContentLoaded', () => {
-    var timeOfHackathon = new Date(2020, 2, 18, 9, 0) / 1000;
+    var timeOfHackathon = new Date(2020, 8, 26, 9, 0) / 1000;
     // var flipdown = new FlipDown(timeOfHackathon, 'countdown-main').start();
     new FlipDown(timeOfHackathon, 'countdown-main',{
       theme: 'light'
     }).start();
   });
+
+  $(window).scroll(function(){
+
+    //scroll top btn
+    // if($(window).width() > 767) {
+		//   if ($(this).scrollTop() > 600) {
+		//   	$('#scroll-top').fadeIn(300);
+		//   } else {
+		//   	$('#scroll-top').fadeOut(300);
+		//   }		
+    // }
+    
+    //change active class of sidebar item
+    var currScroll = window.pageYOffset;
+
+    $("#navbarContent li a.navBottom").each(function(){
+        // var elePos = $($(this).find('a')[0].hash).offset().top;
+        // var eleHeight = $($(this).find('a')[0].hash).height();
+
+        var elePos = $($(this)[0].hash).offset().top;
+        var eleHeight = $($(this)[0].hash).height();
+
+        // console.log($(this).find('a')[0].hash + " " + elePos + " " + eleHeight);
+
+        if(elePos-20 < currScroll && elePos + eleHeight -20 > currScroll){
+            // console.log($(this).find('a')[0].hash);
+            $("#navbarContent li a.navBottom").each(function(){
+                $(this).removeClass('active');
+            })
+            $(this).addClass('active');
+        }
+    });
+});
 
 
 //intersection observer
