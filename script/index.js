@@ -30,27 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   $(window).scroll(function(){
-
-    //scroll top btn
-    // if($(window).width() > 767) {
-		//   if ($(this).scrollTop() > 600) {
-		//   	$('#scroll-top').fadeIn(300);
-		//   } else {
-		//   	$('#scroll-top').fadeOut(300);
-		//   }		
-    // }
     
     //change active class of sidebar item
     var currScroll = window.pageYOffset;
 
     $("#navbarContent li a.navBottom").each(function(){
-        // var elePos = $($(this).find('a')[0].hash).offset().top;
-        // var eleHeight = $($(this).find('a')[0].hash).height();
 
         var elePos = $($(this)[0].hash).offset().top;
         var eleHeight = $($(this)[0].hash).height();
-
-        // console.log($(this).find('a')[0].hash + " " + elePos + " " + eleHeight);
 
         if(elePos-20 < currScroll && elePos + eleHeight -20 > currScroll){
             // console.log($(this).find('a')[0].hash);
@@ -69,7 +56,6 @@ const fadeInRightItems = document.querySelectorAll(".animated.addfadeInRight");
 
 const fadeInRightObserver = new IntersectionObserver(function(entries, fadeInRightObserver){
   entries.forEach(entry => {
-    // console.log(entry);
     if(entry.isIntersecting == false){
       return;
     }

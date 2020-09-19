@@ -4,7 +4,7 @@
 
 $('document').ready(function(){
     setTimeout(function(){
-        $('#preloader').fadeOut(1000);
+        $('#preloader').fadeOut(500);
     }, 500);
 });
 
