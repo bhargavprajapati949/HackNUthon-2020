@@ -6,8 +6,17 @@
     margin: 0px;
     padding: 0px;
     height: 120vh;
+    min-height: 850px;
     background-color: transparent;
     position: relative;
+}
+
+@media (max-width: 767.98px) {
+    #hero,
+    #slider{
+        height: 100vh !important;
+    }
+    
 }
 
 #heroSection{
@@ -48,6 +57,23 @@
     height: auto;
     max-height: 300px;
 }
+
+
+/*======================== 
+        Slider 
+    ========================*/
+
+    #slider{
+        /* background: black url('../images/Slider1.jpg') no-repeat center; */
+        background-size: cover;
+        background: transparent;
+        height: 120vh;
+        min-height: 850px;
+        width: 100vw;
+        overflow: hidden;
+        position: absolute;
+        top: 0px;
+    }
 
 
 /*================== Devfolio =====================*/
@@ -93,21 +119,6 @@
     margin-top: -100px; 
     height: 100px;
     visibility: hidden;
-}
-
-/*======================== 
-        Slider 
-    ========================*/
-
-#slider{
-    /* background: black url('../images/Slider1.jpg') no-repeat center; */
-    background-size: cover;
-    background: transparent;
-    height: 120vh;
-    width: 100vw;
-    overflow: hidden;
-    position: absolute;
-    top: 0px;
 }
 
 
