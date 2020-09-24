@@ -295,6 +295,12 @@
     text-align: center;
 }
 
+#sponsors .sponsor-subtitle{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 3rem 0px .5rem;
+}
+
 #sponsors .sponsor-box img{
     border: 1px solid rgba(0,0,0,.125);
 }
