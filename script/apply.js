@@ -348,7 +348,7 @@ function formvalid(){
   }
 }
 
-var url = 'https://script.google.com/macros/s/AKfycbyDImZKZqsqKvgxwFJHHcCG4rtA03zl5dTI2t1g8qsYUbR3OG4H/exec';
+var url = 'https://script.google.com/macros/s/AKfycbxs6gTLdaSFlpPf_9NjDb3iBjUigtk8qBvX1zssk3muZxRS77MqwcJFDvwbwnqsXx0_mA/exec';
 
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
@@ -410,12 +410,13 @@ $('#submit-form').on('click', function(e) {
 })
 
 var successResponse = function(data){
-  
-  if(data["result"] == 1 || data["result"] == 201){
+  console.log(data);
+
+  if(data["result"] == "success" || data["result"] == "successNotMail"){
     $("#regNo").text(data["data"]["regNo"]);
     $("#successEmail").text(data["data"]["email"]);
 
-    // if(data["result"] == 201){
+    // if(data["result"] == "successNotMail"){
     //   $("#SuccessMsg").append("Contect us, in case you don't receive conformation email from us.");
     // }
 
