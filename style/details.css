@@ -38,7 +38,7 @@ body{
 
 /*================== Devfolio =====================*/
 
-#devfolio-apply-now{
+/* #devfolio-apply-now{
     -ms-flex-align: center;
     -webkit-box-align: center;
     align-items: center;
@@ -65,4 +65,4 @@ body{
   #devfolio-apply-now:hover{
     background-color: #2954BF !important;
   }
-  
+   */

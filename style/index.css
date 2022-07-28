@@ -78,7 +78,7 @@
 
 /*================== Devfolio =====================*/
 
-#devfolio-apply-now,
+/* #devfolio-apply-now, */
 #heroSection .hero-btn{
     -ms-flex-align: center;
     -webkit-box-align: center;
@@ -96,15 +96,14 @@
     font-weight: 600;
     padding: 12px 20px;
     text-align: center;
-    /* text-transform: lowercase; */
 }
 
-#devfolio-apply-now:not([disabled]),
+/* #devfolio-apply-now:not([disabled]), */
 #heroSection .hero-btn {
     cursor: pointer;
 }
 
-#devfolio-apply-now:hover,
+/* #devfolio-apply-now:hover, */
 #heroSection .hero-btn:hover {
     background-color: #2954BF !important;
 }
